@@ -21,3 +21,45 @@ li {
     text-decoration: line-through;
     opacity: 0.6;
 }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #fefefe;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.task-priority.high { background: #ff6b6b; width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.task-priority.medium { background: #ffd93d; width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.task-priority.low { background: #6bcf6b; width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
